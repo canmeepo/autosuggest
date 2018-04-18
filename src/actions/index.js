@@ -5,6 +5,9 @@ export const addSuggestion = chosenCountry => {
     const matched = countries.filter(country => {
         return (
             country.name
+                .replace(/[^\w]/g, '')
+                .toLowerCase()
+                .indexOf(chosenCountry) === 0
         );
     });
 
