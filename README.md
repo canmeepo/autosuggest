@@ -16,6 +16,6 @@ npm start
 
 ## extra bonus
 
-```
-const flatten3 = (arr) => arr.reduce((flat, next) => flat.concat(Array.isArray(next) ? flatten(next) : next), []);
+```bash
+const flatten = (arr) => arr.reduce((flat, next) => flat.concat(Array.isArray(next) ? flatten(next) : next), []);
 ```
